@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+</head>
+
+<body>
+    <!-- Overall Bootstrap grid -->
+    <div class="container">
+
+        <!-- Jumbotron with title -->
+        <div class="jumbotron">
+
+            <h1 class="text-center">
+                <strong>Star Wars RPG</strong>
+            </h1>
+            <h2 class="text-center">Choose Your Jedi</h2>
+
+        </div>
+        <!-- End Jumbotron -->
+
+        <!-- Contents of the game-->
+        <div class="row">
+
+            <!-- Available characters -->
+            <div class="col-md-12" id="characters-available">
+                <span class="character-image available-character" id="darth-character">
+                    <p>Darth Revan</p>
+                    <img src="assets/images/Darth Revan.jpg" alt="darth" id="darth-image" style="width: 150px" "height:100px">
+                    <p class="health">120</p>
+                </span>
+
+                <span class="character-image available-character" id="juno-character">
+                    <p>Juno Eclipse</p>
+                    <img src="assets/images/Juno Eclipse.png" alt="juno" id="juno-image" style="width: 150px" "height:100px">
+                    <p class="health">100</p>
+                </span>
+
+                <span class="character-image available-character" id="kyle-character">
+                    <p>Kyle Katarn</p>
+                    <img src="assets/images/Kyle Katarn.jpg" alt="kyle" id="kyle-image" style="width: 150px" "height: 100px">
+                    <p class="health">150</p>
+                </span>
+
+                <span class="character-image available-character" id="nym-character">
+                    <p>Nym</p>
+                    <img src="assets/images/Nym.png" alt="nym" id="nym-image" style="width: 150px" "height:100px">
+                    <p class="health">180</p>
+                </span>
+            </div>
+        </div>
+        <!-- End available characters -->
+        <div class="row">
+            <!-- Your chosen character -->
+            <div class="col-md-12" id="chosen-character">
+                <h2>Your Jedi</h2>
+            </div>
+        </div>
+        <!-- End your chosen character-->
+        <div class="row">
+            <!-- Enemies available to attack -->
+            <div class="col-md-12" id="enemies-available">
+                <h2>Enemies Available To Attack</h2>
+            </div>
+        </div>
+        <!-- End enemies available to attack -->
+        <div class="row">
+            <!-- Fight section -->
+            <div class="col-md-12" id="fight-section">
+                <h2>Battle Zone!</h2>
+                <button id="attack">Attack</button>
+            </div>
+        </div>
+        <!-- End fight section -->
+        <div class="row">
+            <!-- Defender section -->
+            <div class="col-md-12" id="defender-section">
+                <h2>Defender</h2>
+            </div>
+        </div>
+        <!-- End defender section -->
+        <div class="row">
+            <!-- Game message section -->
+            <div class="col-md-12" id="message-section">
+                <div id="game-message"></div>
+                <button id="restart">Restart</button>
+            </div>
+        </div>
+        <!-- Game message section -->
+
+    </div>
+    <!-- End contents of the game -->
+
+    </div>
+    <!-- End Bootstrap grid -->
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+</body>
+
+</html>
